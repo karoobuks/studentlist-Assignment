@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="studentList.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Result Page</h1>
+        <strong> Welcome to your result page, please fill in your details below</strong>
+
+        <form class="myForm">
+                <div class="student-form">
+                        <label  for="studentName">Student Name</label>
+                        <input type="text" id="studentName" name="studentName" placeholder="Enter full name" required>
+                </div>
+                <div class="student-form">
+                        <label for="studentClass">Student Class</label>
+                        <input type="text" id="studentClass" name="studentClass" placeholder="Enter student class">
+                </div>
+                <div class="student-form">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="subject1" name="subject1" placeholder="Enter subject name" required>
+                        <input type="number" class="scores1" readonly><br>
+                        <label for="subject">Subject</label>
+                        <input type="text" class="subject2" name="subject2" placeholder="Enter subject name" required>
+                        <input type="number" class="scores2" readonly><br>
+                        <label for="subject">Subject</label>
+                        <input type="text" class="subject3" name="subject3" placeholder="Enter subject name" required>
+                        <input type="number" class="scores3" readonly><br>
+                </div>
+                
+
+                 <button class="submit"  type="submit">Submit</button>
+        </form>
+        <table border="1" style="border-collapse: collapse; width: 100%;">
+            <caption>Student Information</caption>
+            <thead>
+              <tr>
+                <th>Student Name</th>
+                <th>Subject</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="studentnameTable"></td>
+                <td class="subjectTable1"></td>
+                <td class="studentscoreTable1"></td>
+              </tr>
+              <tr>
+                <td class="studentnameTable"></td>
+                <td class="subjectTable2"></td>
+                <td class="studentscoreTable2"></td>
+              </tr>
+              <tr>
+                <td class="studentnameTable"></td>
+                <td class="subjectTable3"></td>
+                <td class="studentscoreTable3"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th class="totalTable">Total SCore</th>
+              </tr>
+            </tfoot>
+          </table>
+        
+       
+    
+    </div>
+
+
+
+
+    <script src="studentList.js" type="module"></script>
+</body>
+</html>
